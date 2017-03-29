@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  $.ajax('/todos.json').done(function(response) {
+    alert(response)
+  })
+})
